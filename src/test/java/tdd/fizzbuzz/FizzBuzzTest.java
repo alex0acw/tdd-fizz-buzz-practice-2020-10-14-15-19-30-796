@@ -34,6 +34,7 @@ public class FizzBuzzTest {
         //then
         assertEquals("Buzz", actual);
     }
+
     @Test
     void should_return_fizz_when_multiple_of_7() {
         //given
