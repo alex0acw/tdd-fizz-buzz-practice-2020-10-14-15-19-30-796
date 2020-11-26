@@ -44,7 +44,7 @@ public class FizzBuzzTest {
         //given
         int number = 7;
         //when
-        String actual = fizzBuzz.countOff(7);
+        String actual = fizzBuzz.countOff(number);
         //then
         assertEquals("Whizz", actual);
     }
@@ -55,7 +55,7 @@ public class FizzBuzzTest {
         //given
         int number = 15;
         //when
-        String actual = fizzBuzz.countOff(15);
+        String actual = fizzBuzz.countOff(number);
         //then
         assertEquals("FizzBuzz", actual);
     }
