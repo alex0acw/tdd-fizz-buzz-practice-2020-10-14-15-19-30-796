@@ -6,9 +6,13 @@ public class FizzBuzz {
     private static final int WHIZZ_MULTIPLE = 7;
 
     public String countOff(int number) {
-        if (number % FIZZ_MULTIPLE == 0) return "Fizz";
-        if (number % BUZZ_MULTIPLE == 0) return "Buzz";
-        if (number % WHIZZ_MULTIPLE == 0) return "Whizz";
-        return String.valueOf(number);
+        StringBuilder result = new StringBuilder();
+        if (number % FIZZ_MULTIPLE == 0) result.append("Fizz");
+        if (number % BUZZ_MULTIPLE == 0) result.append("Buzz");
+        if (number % WHIZZ_MULTIPLE == 0) result.append("Whizz");
+        if (!result.isEmpty())
+            return result.toString();
+        else
+            return String.valueOf(number);
     }
 }
