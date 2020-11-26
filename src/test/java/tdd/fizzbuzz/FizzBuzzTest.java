@@ -91,4 +91,14 @@ public class FizzBuzzTest {
         //then
         assertEquals("FizzBuzzWhizz", actual);
     }
+    @Test
+    void should_return_fizz_when_contains_3() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        //given
+        int number = 13;
+        //when
+        String actual = fizzBuzz.countOff(number);
+        //then
+        assertEquals("Fizz", actual);
+    }
 }
