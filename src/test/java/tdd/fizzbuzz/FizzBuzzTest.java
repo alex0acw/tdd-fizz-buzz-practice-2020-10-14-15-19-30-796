@@ -75,7 +75,7 @@ public class FizzBuzzTest {
     void should_return_fizzbuzz_when_multiple_of_5_and_7() {
         FizzBuzz fizzBuzz = new FizzBuzz();
         //given
-        int number = 35;
+        int number = 70;
         //when
         String actual = fizzBuzz.countOff(number);
         //then
